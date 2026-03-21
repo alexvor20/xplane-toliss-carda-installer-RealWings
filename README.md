@@ -4,6 +4,8 @@ Installer script for the [Carda engine mods](https://forum.thresholdx.net/profil
 
 ## What the installer does
 
+TL;DR: Everything. You only need to download the engine objects, copy them in, and run this script. Specifically though:
+
 1. **Neutralises stock engine ANIM_hide directives** in `objects/engines.obj` and `objects/blades.obj` (replaces `anim/CFM` / `anim/IAE` with `none`).
 2. **Patches Carda engine OBJ datarefs** (the [Chris E fix](#credits)):
    - Rewrites N1 speed datarefs from `sim/flightmodel/engine/ENGN_N1_` to `AirbusFBW/anim/ENGN1Speed`.
