@@ -7,7 +7,7 @@ Installer script for the [Carda engine mods](https://forum.thresholdx.net/profil
 TL;DR: Everything. You only need to download the engine objects, copy them in, and run this script. Specifically though:
 
 1. **Neutralises stock engine ANIM_hide directives** in `objects/engines.obj` and `objects/blades.obj` (replaces `anim/CFM` / `anim/IAE` with `none`).
-2. **Patches Carda engine OBJ datarefs** (the [Chris E fix](#credits)):
+2. **Patches Carda engine OBJ datarefs** ([@Chris E](https://forums.x-plane.org/profile/640915-chris-e/)'s fixes):
    - Rewrites N1 speed datarefs from `sim/flightmodel/engine/ENGN_N1_` to `AirbusFBW/anim/ENGN1Speed`.
    - Rewrites fan rotation datarefs from `sim/flightmodel2/engines/engine_rotation_angle_deg` to `AirbusFBW/EngineFanRotation_deg` (LEAP & PW engines).
    - Corrects the LEAP blade rotation Y-axis direction (flips `-1` → `1`).
@@ -15,11 +15,9 @@ TL;DR: Everything. You only need to download the engine objects, copy them in, a
 
 Backups (`.bak`) are created automatically before any file is modified.
 
----
-
 ## Step 1 - Download the Carda engine mods
 
-Download **all four** engine packs from Threshold:
+Download all four engine packs from the Threshold Forums:
 
 | Engine | Link |
 | ------ | ---- |
@@ -65,26 +63,23 @@ Repeat for all four engine packs (LEAP-1A, PW1100G, CFM56, V2500).
 
 ### Option A: Pre-built binary (no Python needed)
 
-Download the binary for your OS from the [Releases](../../releases) page:
-
 | Platform | A319 | A321 |
 | -------- | ---- | ---- |
-| Windows x64 | `install-carda-a319-windows-x64.exe` | `install-carda-a321-windows-x64.exe` |
-| Windows ARM64 | `install-carda-a319-windows-arm64.exe` | `install-carda-a321-windows-arm64.exe` |
-| macOS Apple Silicon | `install-carda-a319-macos-arm64` | `install-carda-a321-macos-arm64` |
-| macOS Intel | `install-carda-a319-macos-x64` | `install-carda-a321-macos-x64` |
-| Linux x64 | `install-carda-a319-linux-x64` | `install-carda-a321-linux-x64` |
-| Linux ARM64 | `install-carda-a319-linux-arm64` | `install-carda-a321-linux-arm64` |
+| Windows x64 | [`install-carda-a319-windows-x64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-windows-x64.exe) | [`install-carda-a321-windows-x64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-windows-x64.exe) |
+| Windows ARM64 | [`install-carda-a319-windows-arm64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-windows-arm64.exe) | [`install-carda-a321-windows-arm64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-windows-arm64.exe) |
+| macOS Apple Silicon | [`install-carda-a319-macos-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-macos-arm64) | [`install-carda-a321-macos-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-macos-arm64) |
+| macOS Intel | [`install-carda-a319-macos-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-macos-x64) | [`install-carda-a321-macos-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-macos-x64) |
+| Linux x64 | [`install-carda-a319-linux-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-linux-x64) | [`install-carda-a321-linux-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-linux-x64) |
+| Linux ARM64 | [`install-carda-a319-linux-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a319-linux-arm64) | [`install-carda-a321-linux-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-a321-linux-arm64) |
 
-Place the binary inside your aircraft folder and run it:
+Place the binary inside your aircraft folder. On Windows, just double-click the `.exe`. On macOS/Linux you may need to make it executable first:
 
 ```bash
 # Example (A321, Linux):
 cd "/path/to/Airbus A321 (ToLiss)"
+chmod +x install-carda-a321-linux-x64
 ./install-carda-a321-linux-x64
 ```
-
-On macOS/Linux you may need to `chmod +x` the binary first.
 
 ### Option B: Run with Python
 
@@ -105,14 +100,29 @@ python install_carda_a321.py --aircraft-dir "/path/to/Airbus A321 (ToLiss)"
 
 Use `install_carda_a319.py` for the A319 and `install_carda_a321.py` for the A321.
 
----
-
 ## Credits and Licensing
+
 This project is licensed under the GNU GPL v2.
-<br>
-Any contributions (features or bugfixes) are very welcome :grin:. [Here's the project GitHub](https://github.com/iy4vet/xplane-toliss-carda-installer).\
-Feel free to message me on Discord - my username is `iy4vet`. I'm also present in the X-Plane Community and Official servers.\
-<br>
+
+Any contributions (features or bugfixes) are very welcome :grin:. [Here's the project GitHub](https://github.com/iy4vet/xplane-toliss-carda-installer).
+
+Feel free to message me on Discord - my username is `iy4vet`. I'm also present in the X-Plane Community and Official servers.
+
 A huge thank-you to these awesome people:
-- **[Carda (Threshold Forums)](https://forum.thresholdx.net/profile/3927-cardajowol/)** - original engine mod models and textures.
-- **[Chris E (Org Forums)](https://forums.x-plane.org/profile/640915-chris-e/)** - dataref fixes for ToLiss compatibility (original [A321 fix](https://forums.x-plane.org/files/file/89257-carda-engines-mod-fix-for-toliss-a321/) and [A319 fix](https://forums.x-plane.org/files/file/93205-carda-engines-mod-fix-for-toliss-a319/)). With their permission, I've included their fixes in this script. They were: correcting N1 speed and fan rotation datarefs from stock X-Plane paths to the AirbusFBW equivalents used by ToLiss, and fixing the LEAP blade rotation axis direction.
+
+- [Carda (Threshold Forums)](https://forum.thresholdx.net/profile/3927-cardajowol/) - original engine mod models and textures.
+- [@Chris E](https://forums.x-plane.org/profile/640915-chris-e/) - dataref fixes for ToLiss compatibility (original [A321 fix](https://forums.x-plane.org/files/file/89257-carda-engines-mod-fix-for-toliss-a321/) and [A319 fix](https://forums.x-plane.org/files/file/93205-carda-engines-mod-fix-for-toliss-a319/)). With their permission, I've included their fixes in this script. They were: correcting N1 speed and fan rotation datarefs from stock X-Plane paths to the AirbusFBW equivalents used by ToLiss, and fixing the LEAP blade rotation axis direction.
+
+## Changelog
+
+- **1.0r1** - Initial release.
+
+## What's planned
+
+The most obvious one - the [A320neo](https://store.x-plane.org/Airbus-A320-Neo-by-Toliss-XP12-and-XP11_p_1717.html) and [A320ceo add-on](https://store.x-plane.org/A320-Ceo-ADD-ON-to-the-ToLiss-Airbus-A320_p_2091.html). There's a good chance the A319 script works for the A320, but I can't test it myself.
+
+I'd like to also develop scripts for the [A340-600](https://store.x-plane.org/Airbus-A340-600-by-Toliss_p_1459.html) and [A330-900 neo](https://store.x-plane.org/Airbus-A330-900-neo%C2%A0by%C2%A0ToLiss_p_1952.html) in the future!
+
+Doing non-ToLiss Aircraft is also in the cards :grin:.
+
+If there's anything you'd like to see added, send me a message or create a pull request on GitHub!
