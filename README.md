@@ -4,7 +4,7 @@ Installer script for the [Carda engine mods](https://forum.thresholdx.net/profil
 
 ## What the installer does
 
-TL;DR: Everything. You only need to download the engine objects, copy them in, and run this script. Specifically though:
+**TL;DR: Everything. You only need to download the engine objects, copy them in, and run this script.** Specifically though, it:
 
 1. **Neutralises stock engine ANIM_hide directives** in `objects/engines.obj` and `objects/blades.obj` (replaces `anim/CFM` / `anim/IAE` with `none`).
 2. **Patches Carda engine OBJ datarefs** ([@Chris E](https://forums.x-plane.org/profile/640915-chris-e/)'s fixes):
@@ -43,7 +43,7 @@ IAE-V2500-Toliss321-1.1/
 
 ## Step 2 - Copy engine files into the aircraft folder
 
-For **each** of the four extracted mods:
+For each of the four extracted mods:
 
 1. Open the mod's **base folder** (e.g. `A321 Base Folder/` or `A319 Base Folder/`).
 2. Copy (merge) the `objects/` folder inside it into your ToLiss aircraft directory so the engine subfolders end up at:
