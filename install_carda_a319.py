@@ -575,7 +575,7 @@ def main():
     else:
         print("\nWhich engines do you want to install?")
         print("  1 - CFM56 + IAE only  (CEO)")
-        print("  2 - All engines       (CEO + NEO")
+        print("  2 - All engines       (CEO + NEO)")
         while True:
             raw = input("\nEnter 1 or 2: ").strip()
             if raw in ("1", "2"):
