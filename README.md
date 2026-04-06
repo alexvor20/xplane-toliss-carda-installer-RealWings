@@ -26,6 +26,16 @@ Download the engine mods from the Threshold Forums:
 | CFM56-5B/5A | https://forum.thresholdx.net/files/file/1827-cfm56-5b5a-engine-mod-for-ff320-toliss-a319a321/ |
 | IAE V2500 | https://forum.thresholdx.net/files/file/1194-iae-v2500-engine-mod-for-ff320-toliss-a319a321/ |
 
+Each mod zip contains variants for different aircraft. Use the table below to pick the right one for your aircraft:
+
+| Aircraft | CFM56 variant | IAE variant | LEAP variant | PW variant |
+| -------- | ------------- | ----------- | ------------ | ---------- |
+| ToLiss A319 | `CFM56-5A` (A319-specific, lower thrust) or`CFM56-5B` (shared with A320/A321) | `IAE-319` | `LEAP-A319` | `PW-A319` |
+| ToLiss A321 | `CFM56-5B-321` | `IAE-321` | `LEAP-A321` | `PW-A321` |
+| ToLiss A320 | `CFM56-5B-321` | `IAE-321` | `LEAP-A321` | `PW-A321` |
+
+**Note:** There are no dedicated ToLiss A320 mod files - the A320 uses the same engine objects as the A321. The FF A320 variants included in some zips are for a different aircraft entirely; do not use them.
+
 Extract each zip. You'll get a folder per mod with a structure like:
 
 ```txt
