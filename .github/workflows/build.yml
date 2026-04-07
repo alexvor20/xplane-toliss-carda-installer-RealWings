@@ -60,14 +60,14 @@ jobs:
         run: >
           pyinstaller
           --onefile
-          --name "install-carda_RealWings-${{ matrix.label }}"
-          install_carda_Realwings.py
+          --name "install-carda-RealWings-${{ matrix.label }}"
+          install_carda-Realwings.py
 
       - name: Upload artefact
         uses: actions/upload-artifact@v4
         with:
-          name: install-carda_Realwings-${{ matrix.label }}
-          path: dist/install-carda_Realwings-${{ matrix.label }}*
+          name: install-carda-Realwings-${{ matrix.label }}
+          path: dist/install-carda-Realwings-${{ matrix.label }}*
 
   release:
     needs: build
