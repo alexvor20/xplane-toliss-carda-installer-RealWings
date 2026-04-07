@@ -79,21 +79,9 @@ Download the binary for your OS from the [Releases](https://github.com/iy4vet/xp
 
 | Platform | Binary |
 | -------- | ------ |
-| Windows x64 | [`install-carda-windows-x64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-windows-x64.exe) |
-| Windows ARM64 | [`install-carda-windows-arm64.exe`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-windows-arm64.exe) |
-| macOS Apple Silicon | [`install-carda-macos-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-macos-arm64) |
-| macOS Intel | [`install-carda-macos-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-macos-x64) |
-| Linux x64 | [`install-carda-linux-x64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-linux-x64) |
-| Linux ARM64 | [`install-carda-linux-arm64`](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/download/install-carda-linux-arm64) |
+| Windows x64 | [`install_carda_RealWings.exe`](https://github.com/alexvor20/xplane-toliss-carda-installer-RealWings/releases/latest/download/install_carda_RealWings.exe) |
 
-Place the binary inside your aircraft folder. On Windows, just double-click the `.exe`. On macOS/Linux you may need to make it executable first:
-
-```bash
-# Example (A321, Linux):
-cd "/path/to/Airbus A321 (ToLiss)"
-chmod +x install-carda-linux-x64
-./install-carda-linux-x64
-```
+Place the binary inside your aircraft folder. On Windows, just double-click the `.exe`. 
 
 The installer will ask which aircraft (A319 / A320 / A321) and which engines to install.
 
@@ -122,14 +110,14 @@ python install_carda.py --aircraft a321 --engines 2 --aircraft-dir "/path/to/Air
 
 ## Credits and Licensing
 
+- [iy4vet](iy4vet) - original [installer](https://github.com/iy4vet/xplane-toliss-carda-installer)
+
 This project is licensed under the GNU GPL v3.
 
 Any contributions (features or bugfixes) are very welcome :grin:. [Here's the project GitHub](https://github.com/alexvor20/xplane-toliss-carda-installer-RealWings).
-[Original project GitHub](https://github.com/iy4vet/xplane-toliss-carda-installer).
 
 A huge thank-you to these awesome people:
 
-- [iy4vet](iy4vet) - original installer
 - [Carda (Threshold Forums)](https://forum.thresholdx.net/profile/3927-cardajowol/) - original engine mod models and textures.
 - [@Chris E](https://forums.x-plane.org/profile/640915-chris-e/) - dataref fixes for ToLiss compatibility (original [A321 fix](https://forums.x-plane.org/files/file/89257-carda-engines-mod-fix-for-toliss-a321/) and [A319 fix](https://forums.x-plane.org/files/file/93205-carda-engines-mod-fix-for-toliss-a319/)). With their permission, I've included their fixes in this script. They were: correcting N1 speed and fan rotation datarefs from stock X-Plane paths to the AirbusFBW equivalents used by ToLiss, and fixing the LEAP blade rotation axis direction.
 - [@SGFSYT](https://forums.x-plane.org/profile/1009231-sgfsyt/)
