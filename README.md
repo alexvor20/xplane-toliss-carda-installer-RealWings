@@ -2,9 +2,7 @@
 
 Installer script for the [Carda engine mods](https://forum.thresholdx.net/profile/3927-cardajowol/) on the ToLiss A319, A320 (neo and ceo), and A321 (ceo and neo) in X-Plane. Handles all `.acf` and `.obj` edits so you don't have to do them by hand.
 
-For use with [RealWings321](https://forums.x-plane.org/files/file/99442-realwings321-wing-replacement-mod-for-toliss-a321neoceo/), [RealWings320](https://forums.x-plane.org/files/file/99352-realwings320-wing-replacement-mod-for-toliss-a320neo) and [RealWings319](https://forums.x-plane.org/files/file/99042-realwings319-wing-replacement-mod-for-toliss-a319/).
-
-
+For use with [RealWings321](https://forums.x-plane.org/files/file/99442-realwings321-wing-replacement-mod-for-toliss-a321neoceo/), [RealWings320](https://forums.x-plane.org/files/file/99352-realwings320-wing-replacement-mod-for-toliss-a320neo) and [RealWings319](https://forums.x-plane.org/files/file/99042-realwings319-wing-replacement-mod-for-toliss-a319/) by [GeoBuilds](https://forums.x-plane.org/profile/962966-geobuilds/).
 
 ## What the installer does
 
@@ -126,29 +124,16 @@ python install_carda.py --aircraft a321 --engines 2 --aircraft-dir "/path/to/Air
 
 This project is licensed under the GNU GPL v3.
 
-Any contributions (features or bugfixes) are very welcome :grin:. [Here's the project GitHub](https://github.com/iy4vet/xplane-toliss-carda-installer).
-
-Feel free to message me on Discord - my username is `iy4vet`. I'm also present in the X-Plane Community and Official servers.
+Any contributions (features or bugfixes) are very welcome :grin:. [Here's the project GitHub](https://github.com/alexvor20/xplane-toliss-carda-installer-RealWings).
+[Original project GitHub](https://github.com/iy4vet/xplane-toliss-carda-installer).
 
 A huge thank-you to these awesome people:
 
+- [iy4vet](iy4vet) - original installer
 - [Carda (Threshold Forums)](https://forum.thresholdx.net/profile/3927-cardajowol/) - original engine mod models and textures.
 - [@Chris E](https://forums.x-plane.org/profile/640915-chris-e/) - dataref fixes for ToLiss compatibility (original [A321 fix](https://forums.x-plane.org/files/file/89257-carda-engines-mod-fix-for-toliss-a321/) and [A319 fix](https://forums.x-plane.org/files/file/93205-carda-engines-mod-fix-for-toliss-a319/)). With their permission, I've included their fixes in this script. They were: correcting N1 speed and fan rotation datarefs from stock X-Plane paths to the AirbusFBW equivalents used by ToLiss, and fixing the LEAP blade rotation axis direction.
-- [alexvor20](https://github.com/alexvor20)
 - [@SGFSYT](https://forums.x-plane.org/profile/1009231-sgfsyt/)
 
 ## Changelog
 
-- **2.0r1** - Add: A320neo/ceo install; unified script with interactive aircraft selection
-- **1.1r1** - Add: ceo-only install option
 - **1.0r1** - Initial release
-
-## What's Planned
-
-I'm looking at integrating the [wing mod](https://forums.x-plane.org/files/file/88518-toliss-a319-a320-and-a321-wing-enhancement-mod/) and [gear compression mod](https://www.reddit.com/r/Xplane/comments/1iki7mw/modified_gear_suspension_for_toliss_a32021). Let me know if you'd like to see these added!
-
-Also in the Carda line, I could look at the FF A320, 757, and 767. Since I don't own these, it's difficult for me to develop installers. Do message me if you're willing to help!
-
-Maybe also the [A340-600](https://toliss.com/pages/a340-600) and [A330-900 neo](https://toliss.com/pages/a330-900) (though with non-Carda engines).
-
-If there's anything you'd like to see added, send me a message or create a pull request on GitHub!
