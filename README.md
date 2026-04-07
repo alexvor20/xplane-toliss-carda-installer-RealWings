@@ -75,11 +75,7 @@ Repeat for all four engine packs (LEAP-1A, PW1100G, CFM56, V2500).
 
 ### Option A: Pre-built binary (no Python needed)
 
-Download the binary for your OS from the [Releases](https://github.com/iy4vet/xplane-toliss-carda-installer/releases/latest/) page:
-
-| Platform | Binary |
-| -------- | ------ |
-| Windows x64 | [`install_carda_RealWings.exe`](https://github.com/alexvor20/xplane-toliss-carda-installer-RealWings/releases/latest/download/install_carda_RealWings.exe) |
+Download the binary for your OS from the [Releases](https://github.com/alexvor20/xplane-toliss-carda-installer/releases/latest/) page:
 
 Place the binary inside your aircraft folder. On Windows, just double-click the `.exe`. 
 
