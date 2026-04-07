@@ -55,5 +55,5 @@ jobs:
       - name: Upload artefact
         uses: actions/upload-artifact@v4
         with:
-          name: install-carda-Realwings-${{ matrix.label }}
-          path: dist/install-carda-Realwings-${{ matrix.label }}*
+          name: install-carda-RealWings-${{ matrix.label }}
+          path: dist/install-carda-RealWings-${{ matrix.label }}*
