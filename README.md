@@ -85,23 +85,23 @@ The installer will ask which aircraft (A319 / A320 / A321) and which engines to 
 
 Requires Python 3.10+. No external dependencies.
 
-Place `install_carda.py` in your aircraft folder and run:
+Place `install_carda_RealWings.py` in your aircraft folder and run:
 
 ```bash
 cd "/path/to/Airbus A321 (ToLiss)"
-python install_carda.py
+python install_carda_RealWings.py
 ```
 
 Or point to the aircraft folder from anywhere:
 
 ```bash
-python install_carda.py --aircraft-dir "/path/to/Airbus A321 (ToLiss)"
+python install_carda_RealWings.py --aircraft-dir "/path/to/Airbus A321 (ToLiss)"
 ```
 
 For fully non-interactive use (e.g. scripting), pass `--aircraft` and `--engines`:
 
 ```bash
-python install_carda.py --aircraft a321 --engines 2 --aircraft-dir "/path/to/Airbus A321 (ToLiss)"
+python install_carda_RealWings.py --aircraft a321 --engines 2 --aircraft-dir "/path/to/Airbus A321 (ToLiss)"
 ```
 
 ## Credits and Licensing
