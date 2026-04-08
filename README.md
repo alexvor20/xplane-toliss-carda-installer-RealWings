@@ -106,7 +106,7 @@ python install_carda.py --aircraft a321 --engines 2 --aircraft-dir "/path/to/Air
 
 ## Credits and Licensing
 
-- [iy4vet](iy4vet) - original [installer](https://github.com/iy4vet/xplane-toliss-carda-installer)
+- [@iy4vet](https://github.com/iy4vet) - original [installer](https://github.com/iy4vet/xplane-toliss-carda-installer)
 
 This project is licensed under the GNU GPL v3.
 
